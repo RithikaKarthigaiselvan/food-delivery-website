@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+}
+header {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    margin: 20px;
+}
+
+.food-item {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+}
+.food-item img {
+    width: 150px;
+    height: 150px;
+}
+button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
