@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <center>
-        <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery</title>
+    <title>Food Order</title>
     <link rel="stylesheet" href="food.css">
 </head>
 <body>
     <header>
-        <h1>QuickEats - Fast & Tasty</h1>
-    <nav>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
-            <a href="#cart">Cart</a>
-        </nav>
+        <h1>Welcome to Our Food Delivery</h1>
     </header>
-    <section id="menu">
-        <h2>Our Popular Dishes</h2>
-        <div class="food-item">
-            <img src="burger.jpg" alt="Burger">
-            <h3>Cheesy Burger</h3>
-            <p>$5.99</p>
-            <button onclick="addToCart('Cheesy Burger', 5.99)">Add to Cart</button>
-        </div>
-        <div class="food-item">
-            <img src="pizza.jpg" alt="Pizza">
-            <h3>Spicy Pizza</h3>
-            <p>$8.99</p>
-            <button onclick="addToCart('Spicy Pizza', 8.99)">Add to Cart</button>
-        </div>
+    <section>
+        <h2>Menu</h2>
+        <div id="menu"></div>
     </section>
-    <section id="cart">
-        <h2>Your Cart</h2>
-        <ul id="cart-items"></ul>
-        <p><strong>Total:</strong> $<span id="total">0</span></p>
+    <section>
+        <h2>Your Order</h2>
+        <ul id="orderList"></ul>
+        <button onclick="placeOrder()">Place Order</button>
     </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@quickeats.com</p>
-    </section>
-
     <script src="food.js"></script>
 </body>
-    </center>
 </html>
