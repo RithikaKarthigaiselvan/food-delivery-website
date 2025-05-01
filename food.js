@@ -1,21 +1,21 @@
 let cart = [];
-let total = 0;
-
 function addToCart(item, price) {
     cart.push({ item, price });
-    total += price;
     updateCart();
 }
 
 function updateCart() {
-    const cartList = document.getElementById("cart-items");
-    cartList.innerHTML = "";
-    
-    cart.forEach(order => {
-        let listItem = document.createElement("li");
-        listItem.textContent = `${order.item} - $${order.price}`;
-        cartList.appendChild(listItem);
+    const cartItems = document.getElementById('cart-items');
+    const total = document.getElementById('total');
+    cartItems.innerHTML = '';
+    let totalPrice = 0;
+
+    cart.forEach(({ item, price }) => {
+        const li = document.createElement('li');
+        li.textContent = `${item} - $${price.toFixed(2)}`;
+        cartItems.appendChild(li);
+        totalPrice += price;
     });
 
-    document.getElementById("total").textContent = total.toFixed(2);
+    total.textContent = totalPrice.toFixed(2);
 }
